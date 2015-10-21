@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
                         return(inverse_matrix)
                 }
                 #This if function checks if there is something in the cache, and 
-                #if it's not empty (!is.null), return the value
+                #if it's not empty (!is.null), return the value.
                 
                 data <- x$get()  #sets the data as the matrix to be inverted
                 inverse_matrix <- solve(data, ...) 
